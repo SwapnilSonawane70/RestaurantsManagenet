@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="Main.js"></script>
+
+</head>
+<body>
+         <div class="container">
+            <p class="display-5  py-5 m-2">Restaurant-App</p>
+            <hr>
+
+             
+            
+            <div id="restautantCard"></div>
+
+
+            <script>getrestaurant()</script>
+
+            <div id="addrest" class="mt-3 mb-2">
+                <p class="h3">Add Restaurant</p>
+                <hr>
+                <div class="mb-3">
+                    <label for="restoname" class="form-label">Restaurant Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="enter name">
+                </div>
+                <div class="mb-3"> 
+                    <label for="restaddress" class="form-label">Address</label>
+                    <textarea class="form-control" id="address" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="restocity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="enter city">
+                </div>
+                <div class="mb-3">
+                    <label for="restocuisine" class="form-label">cuisine</label>
+                    <input type="text" class="form-control" id="cuisine" placeholder="enter cuisine">
+                </div>
+                <div class="mb-3">
+                    <label for="restorating" class="form-label">Rating</label>
+                    <select class="form-select" id="rating" aria-label="Multiple select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                </div>
+                <button class="btn btn-success" type="button" onclick="sendDataToResto()">Submit</button>
+                
+            </div>
+
+         </div>
+
+            
+</body>
+</html>
